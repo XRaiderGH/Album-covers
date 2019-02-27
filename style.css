@@ -1,0 +1,73 @@
+.masthead{
+  background-image: url("cd.png");
+}
+.wrapper{
+
+}
+.card{
+ position: relative;
+ overflow: hidden;
+ height: 370px;
+}
+.card-body{
+  background-color: #e1e4ea;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.card article{
+  margin-left: 10px;
+  background-color: rgba(255,255,255,0.7);
+  height: 340px;
+  transition: margin-top 0.5s;
+  position: relative;
+  margin-top: 0;
+  overflow: auto;
+}
+.card:hover article{
+  margin-top: -380px;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 1.2em;
+  padding-top: 30px;
+}
+.card article ul{
+  list-style: none;
+}
+.naarBoven article{
+  animation: naar-boven 1s forwards;
+}
+
+.naarBeneden article{
+  animation: naar-beneden 1s forwards;
+}
+
+@-webkit-keyframes naar-beneden{
+  10% {margin-top: 405px}
+  30% {margin-top: -300px}
+  50% {margin-top: -150}
+  70% {margin-top: -76}
+  90% {margin-top: -39}
+  20%,40%,60%,80%,100% {margin-top: 0px}
+}
+@-webkit-keyframes naar-boven {
+  10% {margin-top: 0}
+  30% {margin-top: -180px}
+  50% {margin-top: -275px}
+  70% {margin-top: -290}
+  90% {margin-top: -340}
+  20%,40%,60%,80%,100% {margin-top: -370px}
+    }
+img{
+ width: 100%;
+}
+.track-length{
+  padding-left: 20px;
+}
+#validatie{
+}
+footer{
+  margin-top: 50px;
+
+}
